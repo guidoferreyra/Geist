@@ -11,9 +11,8 @@ shapes = (
 ref = Ezh;
 },
 {
-pos = (130,1524);
-ref = circumflexcomb;
-scale = (1,-1);
+pos = (130,180);
+ref = caroncomb;
 }
 );
 width = 564;
@@ -25,10 +24,8 @@ shapes = (
 ref = Ezh;
 },
 {
-alignment = -1;
-pos = (118,1502);
-ref = circumflexcomb;
-scale = (1,-1);
+pos = (118,180);
+ref = caroncomb;
 }
 );
 width = 671;
@@ -40,10 +37,8 @@ shapes = (
 ref = Ezh;
 },
 {
-alignment = -1;
-pos = (106,1509);
-ref = circumflexcomb;
-scale = (1,-1);
+pos = (106,180);
+ref = caroncomb;
 }
 );
 width = 599;

@@ -71,7 +71,6 @@ size = -12;
 {
 name = fsType;
 value = (
-3
 );
 }
 );
@@ -91,6 +90,7 @@ languagesystem latn TRK;
 languagesystem latn ROM;
 languagesystem latn MOL;
 languagesystem latn MAH;
+languagesystem latn CAT;
 languagesystem latn NLD;
 ";
 name = Languagesystems;
@@ -103,10 +103,13 @@ code = "feature locl;
 feature subs;
 feature sinf;
 feature sups;
+feature numr;
+feature dnom;
 feature frac;
 feature ordn;
 feature pnum;
 feature tnum;
+feature case;
 feature ss01;
 feature ss02;
 feature ss03;
@@ -116,9 +119,6 @@ feature ss06;
 feature ss07;
 feature ss08;
 feature ss09;
-feature numr;
-feature dnom;
-feature case;
 ";
 tag = aalt;
 },
@@ -339,7 +339,8 @@ tag = tnum;
 },
 {
 automatic = 1;
-code = "sub strokeshortcomb by strokeshortcomb.case;
+code = "sub periodcentered.loclCAT by periodcentered.loclCAT.case;
+sub strokeshortcomb by strokeshortcomb.case;
 sub slashshortcomb by slashshortcomb.case;
 sub slashlongcomb by slashlongcomb.case;
 ";
@@ -547,6 +548,8 @@ sub exclamdown by exclamdown.ss08;
 sub question by question.ss08;
 sub questiondown by questiondown.ss08;
 sub periodcentered by periodcentered.ss08;
+sub periodcentered.loclCAT by periodcentered.loclCAT.ss08;
+sub periodcentered.loclCAT.case by periodcentered.loclCAT.case.ss08;
 sub dieresiscomb by dieresiscomb.ss08;
 sub dotaccentcomb by dotaccentcomb.ss08;
 sub dieresis by dieresis.ss08;
@@ -582,27 +585,27 @@ axesValues = (
 customParameters = (
 {
 name = hheaAscender;
-value = 920;
+value = 955;
 },
 {
 name = hheaDescender;
-value = -220;
+value = -245;
 },
 {
 name = hheaLineGap;
-value = 100;
+value = 0;
 },
 {
 name = typoAscender;
-value = 920;
+value = 955;
 },
 {
 name = typoDescender;
-value = -220;
+value = -245;
 },
 {
 name = typoLineGap;
-value = 100;
+value = 0;
 },
 {
 name = winAscent;
@@ -684,27 +687,27 @@ axesValues = (
 customParameters = (
 {
 name = hheaAscender;
-value = 920;
+value = 955;
 },
 {
 name = hheaDescender;
-value = -220;
+value = -245;
 },
 {
 name = hheaLineGap;
-value = 100;
+value = 0;
 },
 {
 name = typoAscender;
-value = 920;
+value = 955;
 },
 {
 name = typoDescender;
-value = -220;
+value = -245;
 },
 {
 name = typoLineGap;
-value = 100;
+value = 0;
 },
 {
 name = winAscent;
@@ -785,27 +788,27 @@ axesValues = (
 customParameters = (
 {
 name = hheaAscender;
-value = 920;
+value = 955;
 },
 {
 name = hheaDescender;
-value = -220;
+value = -245;
 },
 {
 name = hheaLineGap;
-value = 100;
+value = 0;
 },
 {
 name = typoAscender;
-value = 920;
+value = 955;
 },
 {
 name = typoDescender;
-value = -220;
+value = -245;
 },
 {
 name = typoLineGap;
-value = 100;
+value = 0;
 },
 {
 name = winAscent;
@@ -1109,12 +1112,12 @@ N = -5;
 "@MMK_R_V" = -70;
 "@MMK_R_Y" = -70;
 "@MMK_R_asterisk" = -100;
+"@MMK_R_dotCAT.case" = -202;
 "@MMK_R_o" = -25;
 "@MMK_R_question" = -50;
 "@MMK_R_t" = -30;
 "@MMK_R_u" = -25;
 "@MMK_R_v" = -40;
-periodcentered.loclCAT.case = -202;
 };
 "@MMK_L_O" = {
 "@MMK_R_A" = -20;
@@ -1204,6 +1207,12 @@ J = -50;
 "@MMK_R_t" = -30;
 "@MMK_R_u" = -15;
 };
+"@MMK_L_dotCAT" = {
+"@MMK_R_l" = -10;
+};
+"@MMK_L_dotCAT.case" = {
+"@MMK_R_H" = 123;
+};
 "@MMK_L_eight" = {
 "@MMK_R_parenright" = -5;
 };
@@ -1219,7 +1228,9 @@ J = -50;
 "@MMK_L_l" = {
 "@MMK_R_a" = 0;
 "@MMK_R_asterisk" = -20;
+"@MMK_R_dotCAT" = -53;
 "@MMK_R_l" = -5;
+"@MMK_R_ldot" = -53;
 "@MMK_R_n" = -5;
 "@MMK_R_o" = -5;
 "@MMK_R_period" = 10;
@@ -1227,7 +1238,6 @@ J = -50;
 "@MMK_R_t" = -45;
 "@MMK_R_u" = -10;
 "@MMK_R_v" = -15;
-periodcentered.loclCAT = -53;
 };
 "@MMK_L_l.001" = {
 "@MMK_R_a.001" = 0;
@@ -1377,12 +1387,6 @@ four.dnom = -60;
 one.numr = {
 fraction = 40;
 };
-periodcentered.loclCAT = {
-"@MMK_R_l" = -10;
-};
-periodcentered.loclCAT.case = {
-"@MMK_R_H" = 123;
-};
 seven.numr = {
 fraction = -30;
 };
@@ -1458,12 +1462,12 @@ N = -10;
 "@MMK_R_V" = -80;
 "@MMK_R_Y" = -70;
 "@MMK_R_asterisk" = -120;
+"@MMK_R_dotCAT.case" = -259;
 "@MMK_R_o" = -39;
 "@MMK_R_question" = -60;
 "@MMK_R_t" = -30;
 "@MMK_R_u" = -25;
 "@MMK_R_v" = -40;
-periodcentered.loclCAT.case = -259;
 };
 "@MMK_L_O" = {
 "@MMK_R_A" = -30;
@@ -1569,6 +1573,12 @@ J = -50;
 "@MMK_R_t" = -40;
 "@MMK_R_u" = -20;
 };
+"@MMK_L_dotCAT" = {
+"@MMK_R_l" = -20;
+};
+"@MMK_L_dotCAT.case" = {
+"@MMK_R_H" = 52;
+};
 "@MMK_L_eight" = {
 "@MMK_R_parenright" = -8;
 };
@@ -1585,6 +1595,7 @@ J = -50;
 "@MMK_L_l" = {
 "@MMK_R_a" = 0;
 "@MMK_R_asterisk" = -20;
+"@MMK_R_dotCAT" = -59;
 "@MMK_R_l" = -10;
 "@MMK_R_n" = -5;
 "@MMK_R_o" = -10;
@@ -1593,7 +1604,6 @@ J = -50;
 "@MMK_R_t" = -50;
 "@MMK_R_u" = -10;
 "@MMK_R_v" = -25;
-periodcentered.loclCAT = -59;
 };
 "@MMK_L_l.001" = {
 "@MMK_R_a.001" = 0;
@@ -1759,12 +1769,6 @@ four.dnom = -50;
 one.numr = {
 fraction = 40;
 };
-periodcentered.loclCAT = {
-"@MMK_R_l" = -20;
-};
-periodcentered.loclCAT.case = {
-"@MMK_R_H" = 52;
-};
 seven.numr = {
 fraction = -30;
 };
@@ -1840,12 +1844,12 @@ N = -3;
 "@MMK_R_V" = -80;
 "@MMK_R_Y" = -70;
 "@MMK_R_asterisk" = -120;
+"@MMK_R_dotCAT.case" = -265;
 "@MMK_R_o" = -22;
 "@MMK_R_question" = -60;
 "@MMK_R_t" = -30;
 "@MMK_R_u" = -14;
 "@MMK_R_v" = -40;
-periodcentered.loclCAT.case = -265;
 };
 "@MMK_L_O" = {
 "@MMK_R_A" = -52;
@@ -1952,6 +1956,9 @@ J = -50;
 "@MMK_R_t" = -22;
 "@MMK_R_u" = -16;
 };
+"@MMK_L_dotCAT.case" = {
+"@MMK_R_H" = 10;
+};
 "@MMK_L_eight" = {
 "@MMK_R_parenright" = -10;
 };
@@ -1968,6 +1975,7 @@ J = -50;
 "@MMK_L_l" = {
 "@MMK_R_a" = -4;
 "@MMK_R_asterisk" = -30;
+"@MMK_R_dotCAT" = -52;
 "@MMK_R_l" = -10;
 "@MMK_R_n" = -2;
 "@MMK_R_o" = -6;
@@ -1976,7 +1984,6 @@ J = -50;
 "@MMK_R_t" = -36;
 "@MMK_R_u" = -6;
 "@MMK_R_v" = -43;
-periodcentered.loclCAT = -52;
 };
 "@MMK_L_l.001" = {
 "@MMK_R_a.001" = -2;
@@ -2156,9 +2163,6 @@ k = {
 };
 one.numr = {
 fraction = 20;
-};
-periodcentered.loclCAT.case = {
-"@MMK_R_H" = 10;
 };
 seven.numr = {
 fraction = -30;

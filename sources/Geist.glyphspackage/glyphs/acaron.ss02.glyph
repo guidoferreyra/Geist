@@ -10,9 +10,8 @@ shapes = (
 ref = a.ss02;
 },
 {
-pos = (121,530);
-ref = circumflexcomb;
-scale = (1,-1);
+pos = (125,0);
+ref = caroncomb;
 }
 );
 width = 570;
@@ -24,10 +23,8 @@ shapes = (
 ref = a.ss02;
 },
 {
-alignment = -1;
-pos = (106,1332);
-ref = circumflexcomb;
-scale = (1,-1);
+pos = (106,10);
+ref = caroncomb;
 }
 );
 width = 661;
@@ -39,10 +36,8 @@ shapes = (
 ref = a.ss02;
 },
 {
-alignment = -1;
-pos = (100,1329);
-ref = circumflexcomb;
-scale = (1,-1);
+pos = (100,0);
+ref = caroncomb;
 }
 );
 width = 598;
