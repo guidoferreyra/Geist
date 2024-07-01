@@ -1,0 +1,51 @@
+{
+glyphname = Rcaron.ss04;
+kernLeft = b;
+kernRight = R;
+layers = (
+{
+layerId = "EE2FFE84-06F1-4AFB-BBEC-60D09A436D14";
+shapes = (
+{
+ref = R.ss04;
+},
+{
+pos = (170,530);
+ref = circumflexcomb;
+scale = (1,-1);
+}
+);
+width = 628;
+},
+{
+layerId = "3507EE3D-0D92-4546-A145-3A991F0A2B71";
+shapes = (
+{
+ref = R.ss04;
+},
+{
+alignment = -1;
+pos = (133,1502);
+ref = circumflexcomb;
+scale = (1,-1);
+}
+);
+width = 729;
+},
+{
+layerId = "6C190511-B94A-4F5A-B519-D6E9DB0E7B93";
+shapes = (
+{
+ref = R.ss04;
+},
+{
+alignment = -1;
+pos = (144,1509);
+ref = circumflexcomb;
+scale = (1,-1);
+}
+);
+width = 678;
+}
+);
+}
