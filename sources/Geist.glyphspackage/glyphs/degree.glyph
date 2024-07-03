@@ -3,12 +3,6 @@ color = 4;
 glyphname = degree;
 layers = (
 {
-anchors = (
-{
-name = top;
-pos = (155,530);
-}
-);
 background = {
 anchors = (
 {
@@ -101,12 +95,6 @@ nodes = (
 width = 364;
 },
 {
-anchors = (
-{
-name = top;
-pos = (201,530);
-}
-);
 layerId = "3507EE3D-0D92-4546-A145-3A991F0A2B71";
 shapes = (
 {
@@ -147,12 +135,6 @@ nodes = (
 width = 446;
 },
 {
-anchors = (
-{
-name = top;
-pos = (184,530);
-}
-);
 layerId = "6C190511-B94A-4F5A-B519-D6E9DB0E7B93";
 shapes = (
 {

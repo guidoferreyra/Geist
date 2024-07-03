@@ -5,12 +5,6 @@ kernLeft = colon;
 kernRight = colon;
 layers = (
 {
-anchors = (
-{
-name = top;
-pos = (130,530);
-}
-);
 guides = (
 {
 pos = (248,413);
@@ -30,12 +24,6 @@ ref = period.ss08;
 width = 260;
 },
 {
-anchors = (
-{
-name = top;
-pos = (166,530);
-}
-);
 layerId = "3507EE3D-0D92-4546-A145-3A991F0A2B71";
 shapes = (
 {
@@ -52,12 +40,6 @@ ref = period.ss08;
 width = 332;
 },
 {
-anchors = (
-{
-name = top;
-pos = (156,530);
-}
-);
 layerId = "6C190511-B94A-4F5A-B519-D6E9DB0E7B93";
 shapes = (
 {

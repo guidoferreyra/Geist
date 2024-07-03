@@ -97,6 +97,6 @@ ref = caroncomb.alt;
 width = 320;
 }
 );
-metricLeft = H;
+metricLeft = l.ss03;
 metricRight = lcaron;
 }

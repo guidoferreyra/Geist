@@ -5,16 +5,6 @@ kernLeft = questiondown;
 kernRight = questiondown;
 layers = (
 {
-anchors = (
-{
-name = bottom;
-pos = (269,33);
-},
-{
-name = top;
-pos = (258,530);
-}
-);
 layerId = "EE2FFE84-06F1-4AFB-BBEC-60D09A436D14";
 shapes = (
 {
@@ -57,16 +47,6 @@ nodes = (
 width = 516;
 },
 {
-anchors = (
-{
-name = bottom;
-pos = (312,34);
-},
-{
-name = top;
-pos = (266,530);
-}
-);
 layerId = "3507EE3D-0D92-4546-A145-3A991F0A2B71";
 shapes = (
 {
@@ -110,16 +90,6 @@ nodes = (
 width = 615;
 },
 {
-anchors = (
-{
-name = bottom;
-pos = (306,34);
-},
-{
-name = top;
-pos = (278,530);
-}
-);
 layerId = "6C190511-B94A-4F5A-B519-D6E9DB0E7B93";
 shapes = (
 {

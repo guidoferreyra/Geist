@@ -2,6 +2,12 @@
 glyphname = fi;
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+pos = (282,0);
+}
+);
 layerId = "EE2FFE84-06F1-4AFB-BBEC-60D09A436D14";
 shapes = (
 {
@@ -19,6 +25,12 @@ ref = dotaccentcomb;
 width = 564;
 },
 {
+anchors = (
+{
+name = caret_1;
+pos = (321,0);
+}
+);
 layerId = "6C190511-B94A-4F5A-B519-D6E9DB0E7B93";
 shapes = (
 {
@@ -36,6 +48,12 @@ ref = dotaccentcomb;
 width = 642;
 },
 {
+anchors = (
+{
+name = caret_1;
+pos = (394,0);
+}
+);
 layerId = "3507EE3D-0D92-4546-A145-3A991F0A2B71";
 shapes = (
 {
@@ -46,7 +64,7 @@ pos = (482,0);
 ref = idotless;
 },
 {
-pos = (502,10);
+pos = (502,0);
 ref = dotaccentcomb;
 }
 );

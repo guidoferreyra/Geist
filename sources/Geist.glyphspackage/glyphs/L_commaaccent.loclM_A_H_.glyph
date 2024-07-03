@@ -11,7 +11,7 @@ ref = L;
 },
 {
 pos = (216,0);
-ref = commaaccentcomb;
+ref = commaaccentcomb.loclMAH;
 }
 );
 width = 550;
@@ -23,9 +23,8 @@ shapes = (
 ref = L;
 },
 {
-alignment = -1;
 pos = (190,0);
-ref = commaaccentcomb;
+ref = commaaccentcomb.loclMAH;
 }
 );
 width = 595;
@@ -37,9 +36,8 @@ shapes = (
 ref = L;
 },
 {
-alignment = -1;
 pos = (197,0);
-ref = commaaccentcomb;
+ref = commaaccentcomb.loclMAH;
 }
 );
 width = 580;

@@ -14,7 +14,7 @@ ref = fraction;
 },
 {
 pos = (345,0);
-ref = two.dnom;
+ref = twosuperior;
 }
 );
 width = 689;
@@ -31,7 +31,7 @@ ref = fraction;
 },
 {
 pos = (468,0);
-ref = two.dnom;
+ref = twosuperior;
 }
 );
 width = 856;
@@ -48,7 +48,7 @@ ref = fraction;
 },
 {
 pos = (412,0);
-ref = two.dnom;
+ref = twosuperior;
 }
 );
 width = 760;

@@ -97,6 +97,6 @@ ref = caroncomb.alt;
 width = 318;
 }
 );
-metricLeft = n;
+metricLeft = l;
 unicode = 318;
 }

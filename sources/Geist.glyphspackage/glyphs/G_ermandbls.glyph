@@ -3,6 +3,16 @@ color = 4;
 glyphname = Germandbls;
 layers = (
 {
+anchors = (
+{
+name = bottom;
+pos = (327,0);
+},
+{
+name = top;
+pos = (327,710);
+}
+);
 background = {
 shapes = (
 {
@@ -91,6 +101,16 @@ nodes = (
 width = 654;
 },
 {
+anchors = (
+{
+name = bottom;
+pos = (387,0);
+},
+{
+name = top;
+pos = (387,710);
+}
+);
 background = {
 shapes = (
 {
@@ -179,6 +199,16 @@ nodes = (
 width = 774;
 },
 {
+anchors = (
+{
+name = bottom;
+pos = (346,0);
+},
+{
+name = top;
+pos = (346,710);
+}
+);
 background = {
 shapes = (
 {
