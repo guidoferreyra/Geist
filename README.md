@@ -11,16 +11,24 @@
 [Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fguidoferreyra%2FGeist.git%2Fgh-pages%2Fbadges%2FShapingChecks.json
 [Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fguidoferreyra%2FGeist.git%2Fgh-pages%2Fbadges%2FUniversal.json
 
-Description of your font goes here. We recommend to start with a very short presentation line (the kind you would use on twitter to present your project for example), and then add as much details as necesary :-) Origin of the project, idea of usage, concept of creation… but also number of masters, axes, character sets, etc.
+![The words “Geist” written as ASCII art in Geist Mono resembling Geist Sans. After this is a demonstration of Geist Sans in regular and bold face that shows alphanumeric characters and some symbols, notably a symbol for Shift, a right arrow, and the Vercel logo. Below is some text written in Geist - a heading: “Geist truly represents the coding and design spirit within Vercel's creator community.”, one paragraph: “At Vercel, we've developed Geist, a typeface specifically designed for developers and designers. We began by creating a monospace version that prioritized readability and seamlessly integrated into coding environments. After perfecting the monospace variant, we expanded Geist into a Sans version, adding versatility to its capabilities.”, and another next to it: “Geist embodies our design principles of simplicity, minimalism, and speed, drawing inspiration from the renowned Swiss design movement. With precision, clarity, and functionality at its core, Geist enhances the visual experience of developers and designers, empowering them to effectively communicate their ideas.”](./documentation/img/geist-banner--light.png#gh-light-mode-only)
+![The words “Geist” written as ASCII art in Geist Mono resembling Geist Sans. After this is a demonstration of Geist Sans in regular and bold face that shows alphanumeric characters and some symbols, notably a symbol for Shift, a right arrow, and the Vercel logo. Below is some text written in Geist - a heading: “Geist truly represents the coding and design spirit within Vercel's creator community.”, one paragraph: “At Vercel, we've developed Geist, a typeface specifically designed for developers and designers. We began by creating a monospace version that prioritized readability and seamlessly integrated into coding environments. After perfecting the monospace variant, we expanded Geist into a Sans version, adding versatility to its capabilities.”, and another next to it: “Geist embodies our design principles of simplicity, minimalism, and speed, drawing inspiration from the renowned Swiss design movement. With precision, clarity, and functionality at its core, Geist enhances the visual experience of developers and designers, empowering them to effectively communicate their ideas.”](./documentation/img/geist-banner--dark.png#gh-dark-mode-only)
 
-Don't hesitate to create images!
+# Geist Sans & Geist Mono
+Geist is a new font family for Vercel, created by [Vercel](https://vercel.com/design) in collaboration with [Basement Studio](https://basement.studio/).
 
-![Sample Image](documentation/image1.png)
-![Sample Image](documentation/image2.png)
+Geist Sans is a sans-serif typeface designed for legibility and simplicity. It is a modern, geometric typeface that is based on the principles of [classic Swiss typography](https://en.wikipedia.org/wiki/International_Typographic_Style). It is designed to be used in headlines, logos, posters, and other large display sizes.
 
-## About
+Geist Mono is a monospaced typeface that has been crafted to be the perfect partner to Geist Sans. It is designed to be used in code editors, diagrams, terminals, and other textbased interfaces where code is represented.
 
-Description of you and/or organisation goes here.
+### Installation
+
+Download the latest release from the [releases page](https://github.com/vercel/geist-font/releases/latest) and install the fonts on your system.
+* [Download Geist Sans](https://github.com/vercel/geist-font/releases/download/1.3.0/Geist-1.3.0.zip)
+* [Download Geist Mono](https://github.com/vercel/geist-font/releases/download/1.3.0/GeistMono-1.3.0.zip)
+
+### Inspiration
+Geist has been influenced and inspired by the following typefaces: [Inter](https://rsms.me/inter/), [Univers](https://www.linotype.com/1212814/univers-family.html), [SF Mono](https://developer.apple.com/fonts/), [SF Pro](https://developer.apple.com/fonts/), [Suisse International](https://www.swisstypefaces.com/fonts/suisse/), [ABC Diatype Mono](https://abcdinamo.com/typefaces/diatype), and [ABC Diatype](https://abcdinamo.com/typefaces/diatype). We thank the creators of these typefaces for their craft.
 
 ## Building
 

@@ -1,5 +1,5 @@
 {
-.appVersion = "3311";
+.appVersion = "3316";
 .formatVersion = 3;
 axes = (
 {
@@ -71,7 +71,6 @@ size = -12;
 {
 name = fsType;
 value = (
-3
 );
 }
 );
@@ -621,7 +620,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 976;
+value = 1012;
 },
 {
 name = winDescent;
@@ -719,7 +718,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 976;
+value = 1012;
 },
 {
 name = winDescent;
@@ -820,7 +819,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 976;
+value = 1012;
 },
 {
 name = winDescent;
@@ -2202,6 +2201,15 @@ value = "Basement.studio, Andrés Briganti, Mateo Zaragoza";
 {
 key = designerURL;
 value = "https://basement.studio/";
+},
+{
+key = licenses;
+values = (
+{
+language = dflt;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+}
+);
 },
 {
 key = manufacturers;
