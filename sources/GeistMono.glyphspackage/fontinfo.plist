@@ -12,6 +12,11 @@ classes = (
 automatic = 1;
 code = "A Aacute Abreve Acaron Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B C Cacute Ccaron Ccedilla Ccircumflex Cdotaccent D Dcaron Dcroat Eth E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek Etilde Schwa F G Gbreve Gcaron Gcircumflex Gcommaaccent Gdotaccent Gmacron Gstroke H Hbar Hcircumflex I Iacute Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek Itilde J Jacute Jcircumflex K Kcaron Kcommaaccent L Lacute Lcaron Lcommaaccent Lslash M N Nacute Ncaron Ncommaaccent Ntilde Eng O Oacute Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S Sacute Scaron Scedilla Scircumflex Scommaaccent Germandbls T Tbar Tcaron Tcedilla Tcommaaccent U Uacute Ubreve Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring Utilde V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Ytilde Z Zacute Zcaron Zdotaccent Saltillo Lcommaaccent.loclMAH Ncommaaccent.loclMAH R.ss04 Racute.ss04 Rcaron.ss04 Rcommaaccent.ss04 G.ss06 Gbreve.ss06 Gcircumflex.ss06 Gcommaaccent.ss06 Gdotaccent.ss06 Gmacron.ss06 Adieresis.ss08 Cdotaccent.ss08 Edieresis.ss08 Edotaccent.ss08 Gdotaccent.ss08 Idieresis.ss08 Idotaccent.ss08 Odieresis.ss08 Udieresis.ss08 Wdieresis.ss08 Ydieresis.ss08 Zdotaccent.ss08 Gdotaccent.ss06.ss08 A-cy Be-cy Ve-cy Ge-cy Gje-cy Geupturn-cy Gestroke-cy De-cy Ie-cy Iegrave-cy Io-cy Zhe-cy Ze-cy Ii-cy Iishort-cy Iigrave-cy Ka-cy Kje-cy El-cy Em-cy En-cy O-cy Pe-cy Er-cy Es-cy Te-cy U-cy Ushort-cy Ef-cy Ha-cy Tse-cy Che-cy Sha-cy Shcha-cy Dzhe-cy Softsign-cy Yeru-cy Hardsign-cy Lje-cy Nje-cy Dze-cy E-cy Ereversed-cy I-cy Yi-cy Je-cy Tshe-cy Yu-cy Ya-cy Dje-cy Yat-cy Yusbig-cy Fita-cy Izhitsa-cy Zhedescender-cy Kadescender-cy Endescender-cy Ustraight-cy Ustraightstroke-cy Hadescender-cy Chedescender-cy Shha-cy Palochka-cy Schwa-cy Imacron-cy Obarred-cy Umacron-cy Lambda Omega eulerconstant";
 name = Uppercase;
+},
+{
+code = "zero one two three four five six seven eight nine zerosuperior onesuperior twosuperior threesuperior foursuperior fivesuperior sixsuperior sevensuperior eightsuperior onethird twothirds onehalf onequarter threequarters oneeighth threeeighths fiveeighths seveneighths 
+";
+name = Numeral;
 }
 );
 customParameters = (
@@ -71,6 +76,25 @@ size = -12;
 {
 name = fsType;
 value = (
+);
+},
+{
+name = isFixedPitch;
+value = 1;
+},
+{
+name = panose;
+value = (
+2,
+1,
+0,
+9,
+0,
+0,
+0,
+0,
+0,
+0
 );
 }
 );
@@ -288,87 +312,897 @@ sub N o period by numero;
 tag = ordn;
 },
 {
-code = "lookup LIGA1 {
-  sub hyphen hyphen hyphen by hyphen_hyphen_hyphen.liga;
-  sub hyphen hyphen by hyphen_hyphen.liga;
-} LIGA1;
+code = "# </>
+lookup less_slash_greater.liga {
+sub SPC SPC greater' by less_slash_greater.liga;
+sub SPC slash' greater by SPC;
+sub less' slash greater by SPC;
+} less_slash_greater.liga;
 
 
-lookup LIGA2 {
-sub less exclam hyphen hyphen hyphen by less_exclam_hyphen_hyphen_hyphen.liga;
-sub bar bar bar greater by bar_bar_bar_greater.liga;
-sub hyphen hyphen hyphen greater by hyphen_hyphen_hyphen_greater.liga;
-sub less bar bar bar by less_bar_bar_bar.liga;
-sub less equal equal greater by less_equal_equal_greater.liga;
-sub less exclam hyphen hyphen by less_exclam_hyphen_hyphen.liga;
-sub asciitilde asciitilde greater by asciitilde_asciitilde_greater.liga;
-sub bar bar equal by bar_bar_equal.liga;
-sub bar bar greater by bar_bar_greater.liga;
-sub bar hyphen greater by bar_hyphen_greater.liga;
-sub equal equal equal by equal_equal_equal.liga;
-sub equal equal greater by equal_equal_greater.liga;
-sub equal greater greater by equal_greater_greater.liga;
-sub equal less less by equal_less_less.liga;
-sub equal slash equal by equal_slash_equal.liga;
-sub exclam equal equal by exclam_equal_equal.liga;
-sub greater equal greater by greater_equal_greater.liga;
-sub greater greater equal by greater_greater_equal.liga;
-sub greater greater hyphen by greater_greater_hyphen.liga;
-sub greater hyphen greater by greater_hyphen_greater.liga;
-sub hyphen greater greater by hyphen_greater_greater.liga;
-sub hyphen hyphen greater by hyphen_hyphen_greater.liga;
-sub hyphen less less by hyphen_less_less.liga;
-sub less asciitilde asciitilde by less_asciitilde_asciitilde.liga;
-sub less asciitilde greater by less_asciitilde_greater.liga;
-sub less bar bar by less_bar_bar.liga;
-sub less bar greater by less_bar_greater.liga;
-sub less equal equal by less_equal_equal.liga;
-sub less equal greater by less_equal_greater.liga;
-sub less equal less by less_equal_less.liga;
-sub less hyphen greater by less_hyphen_greater.liga;
-sub less hyphen hyphen by less_hyphen_hyphen.liga;
-sub less hyphen less by less_hyphen_less.liga;
-sub less less equal by less_less_equal.liga;
-sub less less hyphen by less_less_hyphen.liga;
-sub less slash greater by less_slash_greater.liga;
-sub numbersign numbersign numbersign by numbersign_numbersign_numbersign.liga;
-sub numbersign underscore parenleft by numbersign_underscore_parenleft.liga;
-sub period period equal by period_period_equal.liga;
-sub period period period by period_period_period.liga;
-sub slash equal equal by slash_equal_equal.liga;
-sub asciitilde asciitilde by asciitilde_asciitilde.liga;
-sub asciitilde at by asciitilde_at.liga;
-sub asciitilde equal by asciitilde_equal.liga;
-sub asciitilde greater by asciitilde_greater.liga;
-sub asciitilde hyphen by asciitilde_hyphen.liga;
-sub bar braceright by bar_braceright.liga;
-sub bar equal by bar_equal.liga;
-sub bar greater by bar_greater.liga;
-sub braceleft bar by braceleft_bar.liga;
-sub colon equal by colon_equal.liga;
-sub equal equal by equal_equal.liga;
-sub equal greater by equal_greater.liga;
-sub exclam equal by exclam_equal.liga;
-sub exclam question by exclam_question.liga;
-sub greater equal by greater_equal.liga;
-sub greater hyphen by greater_hyphen.liga;
-sub hyphen asciitilde by hyphen_asciitilde.liga;
-sub hyphen greater by hyphen_greater.liga;
-sub hyphen less by hyphen_less.liga;
-sub less asciitilde by less_asciitilde.liga;
-sub less bar by less_bar.liga;
-sub less equal by less_equal.liga;
-sub less greater by less_greater.liga;
-sub less hyphen by less_hyphen.liga;
-sub numbersign underscore by numbersign_underscore.liga;
-sub percent percent by percent_percent.liga;
-sub period equal by period_equal.liga;
-sub question question by question_question.liga;
-sub question question question by question_question_question.liga;
-sub slash equal by slash_equal.liga;
-  
-} LIGA2;
+# ~=
+lookup asciitilde_equal.liga {
+sub SPC equal' by asciitilde_equal.liga;
+sub asciitilde' equal by SPC;
+} asciitilde_equal.liga;
 
+
+
+# !?
+lookup exclam_question.liga {
+sub SPC question' by exclam_question.liga;
+sub exclam' question by SPC;
+} exclam_question.liga;
+
+# ###
+lookup numbersign_numbersign_numbersign.liga {
+sub SPC SPC numbersign' by numbersign_numbersign_numbersign.liga;
+sub SPC numbersign' numbersign by SPC;
+sub numbersign' numbersign numbersign by SPC;
+} numbersign_numbersign_numbersign.liga;
+
+
+# %%
+lookup percent_percent.liga {
+sub SPC percent' by percent_percent.liga;
+sub percent' percent by SPC;
+} percent_percent.liga;
+
+# ~@
+lookup asciitilde_at.liga {
+sub SPC at' by asciitilde_at.liga;
+sub asciitilde' at by SPC;
+} asciitilde_at.liga;
+
+
+# |}
+lookup bar_braceright.liga {
+ignore sub bar bar' braceright;
+ignore sub bar' bar braceright;
+sub SPC braceright' by bar_braceright.liga;
+sub bar' braceright by SPC;
+} bar_braceright.liga;
+
+
+
+# {|
+lookup braceleft_bar.liga {
+ignore sub braceleft braceleft' bar;
+ignore sub braceleft' bar bar;
+sub SPC bar' by braceleft_bar.liga;
+sub braceleft' bar by SPC;
+} braceleft_bar.liga;
+
+# /=
+lookup slash_equal.liga {
+ignore sub slash slash' equal;
+ignore sub equal slash' equal;
+ignore sub slash' equal equal;
+sub SPC equal' by slash_equal.liga;
+sub slash' equal by SPC;
+} slash_equal.liga;
+
+
+
+
+# ...
+lookup period_period_period.liga {
+ignore sub period period' period period;
+ignore sub period' period period period;
+sub SPC SPC period' by period_period_period.liga;
+sub SPC period' period by SPC;
+sub period' period period by SPC;
+} period_period_period.liga;
+
+
+# <!--
+lookup less_exclam_hyphen_hyphen.liga {
+ignore sub less less' exclam hyphen hyphen;
+ignore sub parenleft question less' exclam hyphen hyphen;
+ignore sub less' exclam hyphen hyphen hyphen;
+sub SPC SPC SPC hyphen' by less_exclam_hyphen_hyphen.liga;
+sub SPC SPC hyphen' hyphen by SPC;
+sub SPC exclam' hyphen hyphen by SPC;
+sub less' exclam hyphen hyphen by SPC;
+} less_exclam_hyphen_hyphen.liga;
+
+
+# <<-
+lookup less_less_hyphen.liga {
+ignore sub less less' less hyphen;
+ignore sub less' less hyphen hyphen;
+sub SPC SPC hyphen' by less_less_hyphen.liga;
+sub SPC less' hyphen by SPC;
+sub less' less hyphen by SPC;
+} less_less_hyphen.liga;
+
+# <-
+lookup less_hyphen.liga {
+ignore sub less less' hyphen;
+ignore sub less' hyphen hyphen;
+ignore sub less' hyphen @Numeral greater;
+ignore sub less' hyphen @Numeral @Numeral greater;
+ignore sub less' hyphen @Numeral @Numeral @Numeral greater;
+ignore sub less' hyphen less;
+ignore sub less' hyphen bar;
+ignore sub less' hyphen greater;
+sub SPC hyphen' by less_hyphen.liga;
+sub less' hyphen by SPC;
+} less_hyphen.liga;
+
+
+# <>
+lookup less_greater.liga {
+ignore sub less less' greater;
+ignore sub less' greater greater;
+sub SPC greater' by less_greater.liga;
+sub less' greater by SPC;
+} less_greater.liga;
+
+
+# <=>
+lookup less_equal_greater.liga {
+ignore sub less less' equal greater;
+ignore sub parenleft question less' equal greater;
+ignore sub less' equal greater greater;
+sub SPC SPC greater' by less_equal_greater.liga;
+sub SPC equal' greater by SPC;
+sub less' equal greater by SPC;
+} less_equal_greater.liga;
+
+# <->
+lookup less_hyphen_greater.liga {
+ignore sub less less' hyphen greater;
+ignore sub less' hyphen greater greater;
+sub SPC SPC greater' by less_hyphen_greater.liga;
+sub SPC hyphen' greater by SPC;
+sub less' hyphen greater by SPC;
+} less_hyphen_greater.liga;
+
+# <|||
+lookup less_bar_bar_bar.liga {
+ignore sub less less' bar bar bar;
+ignore sub less' bar bar bar bar;
+sub SPC SPC SPC bar' by less_bar_bar_bar.liga;
+sub SPC SPC bar' bar by SPC;
+sub SPC bar' bar bar by SPC;
+sub less' bar bar bar by SPC;
+} less_bar_bar_bar.liga;
+
+# <||
+lookup less_bar_bar.liga {
+ignore sub less less' bar bar;
+ignore sub less' bar bar bar;
+ignore sub less' bar bar greater;
+sub SPC SPC bar' by less_bar_bar.liga;
+sub SPC bar' bar by SPC;
+sub less' bar bar by SPC;
+} less_bar_bar.liga;
+
+# <|
+lookup less_bar.liga {
+ignore sub less less' bar;
+ignore sub less' bar bar bar;
+ignore sub less' bar greater;
+sub SPC bar' by less_bar.liga;
+sub less' bar by SPC;
+} less_bar.liga;
+
+
+
+# ->>
+lookup hyphen_greater_greater.liga {
+ignore sub hyphen hyphen' greater greater;
+ignore sub hyphen' greater greater greater;
+sub SPC SPC greater' by hyphen_greater_greater.liga;
+sub SPC greater' greater by SPC;
+sub hyphen' greater greater by SPC;
+} hyphen_greater_greater.liga;
+
+# --->
+lookup hyphen_hyphen_hyphen_greater.liga {
+ignore sub bracketleft hyphen' hyphen hyphen greater;
+ignore sub hyphen hyphen' hyphen greater;
+ignore sub hyphen' hyphen greater greater;
+sub SPC SPC SPC greater' by hyphen_hyphen_hyphen_greater.liga;
+sub SPC SPC hyphen' greater by SPC;
+sub SPC hyphen' hyphen greater by SPC;
+sub hyphen' hyphen hyphen greater by SPC;
+} hyphen_hyphen_hyphen_greater.liga;
+
+
+# -->
+lookup hyphen_hyphen_greater.liga {
+ignore sub bracketleft hyphen' hyphen greater;
+ignore sub hyphen hyphen' hyphen greater;
+ignore sub hyphen' hyphen greater greater;
+sub SPC SPC greater' by hyphen_hyphen_greater.liga;
+sub SPC hyphen' greater by SPC;
+sub hyphen' hyphen greater by SPC;
+} hyphen_hyphen_greater.liga;
+
+# ->
+lookup hyphen_greater.liga {
+ignore sub bracketleft hyphen' greater;
+ignore sub hyphen hyphen' greater;
+ignore sub greater hyphen' greater;
+ignore sub bar hyphen' greater;
+ignore sub hyphen' greater greater;
+ignore sub plus hyphen' greater;
+sub SPC greater' by hyphen_greater.liga;
+sub hyphen' greater by SPC;
+} hyphen_greater.liga;
+
+# >=
+lookup greater_equal.liga {
+ignore sub greater greater' equal;
+ignore sub greater' equal equal;
+ignore sub greater' equal greater;
+ignore sub greater' equal less;
+sub SPC equal' by greater_equal.liga;
+sub greater' equal by SPC;
+} greater_equal.liga;
+
+# <=
+lookup less_equal.liga {
+ignore sub less' equal less;
+ignore sub less' equal bar;
+ignore sub less less' equal;
+ignore sub parenleft question less' equal;
+ignore sub less' equal equal;
+sub SPC equal' by less_equal.liga;
+sub less' equal by SPC;
+} less_equal.liga;
+
+# <<=
+lookup less_less_equal.liga {
+ignore sub less' less equal equal;
+ignore sub less less' less equal;
+sub SPC equal' by less_less_equal.liga;
+sub SPC less' equal by SPC;
+sub less' less equal by SPC;
+} less_less_equal.liga;
+
+# <==
+lookup less_equal_equal.liga {
+ignore sub less less' equal equal;
+ignore sub parenleft question less' equal equal;
+ignore sub less' equal equal equal;
+ignore sub less' equal equal greater;
+sub SPC SPC equal' by less_equal_equal.liga;
+sub SPC equal' equal by SPC;
+sub less' equal equal by SPC;
+} less_equal_equal.liga;
+
+# <|>
+lookup less_bar_greater.liga {
+ignore sub less less' bar greater;
+ignore sub less' bar greater greater;
+sub SPC SPC greater' by less_bar_greater.liga;
+sub SPC bar' greater by SPC;
+sub less' bar greater by SPC;
+} less_bar_greater.liga;
+
+
+# !=
+lookup exclam_equal.liga {
+ignore sub exclam exclam' equal;
+ignore sub parenleft question exclam' equal;
+ignore sub parenleft question less exclam' equal;
+ignore sub equal exclam' equal;
+ignore sub exclam' equal equal;
+sub SPC equal' by exclam_equal.liga;
+sub exclam' equal by SPC;
+} exclam_equal.liga;
+
+
+# !==
+lookup exclam_equal_equal.liga{
+ignore sub exclam exclam' equal equal;
+ignore sub parenleft question exclam' equal equal;
+ignore sub parenleft question less exclam' equal equal;
+ignore sub exclam' equal equal equal;
+sub SPC SPC equal' by exclam_equal_equal.liga;
+sub SPC equal' equal by SPC;
+sub exclam' equal equal by SPC;
+} exclam_equal_equal.liga;
+
+
+
+# =>
+lookup equal_greater.liga {
+ignore sub bracketleft equal' greater;
+ignore sub equal equal' greater;
+ignore sub greater equal' greater;
+ignore sub bar equal' greater;
+ignore sub parenleft question less equal' greater;
+ignore sub parenleft question equal' greater;
+ignore sub equal' greater equal;
+ignore sub equal' greater greater;
+sub SPC greater' by equal_greater.liga;
+sub equal' greater by SPC;
+} equal_greater.liga;
+
+# ==
+lookup equal_equal.liga {
+ignore sub equal equal' equal;
+ignore sub parenleft question less equal' equal;
+ignore sub parenleft question equal' equal;
+ignore sub equal' equal equal;
+ignore sub equal' equal greater;
+sub SPC equal' by equal_equal.liga;
+sub equal' equal by SPC;
+} equal_equal.liga;
+
+# ===
+lookup equal_equal_equal.liga {
+ignore sub equal equal' equal equal;
+ignore sub parenleft question equal' equal equal;
+ignore sub less equal' equal equal;
+ignore sub equal' equal equal equal;
+ignore sub equal' equal equal greater;
+sub SPC SPC equal' by equal_equal_equal.liga;
+sub SPC equal' equal by SPC;
+sub equal' equal equal by SPC;
+} equal_equal_equal.liga;
+
+
+
+# |||>
+lookup bar_bar_bar_greater.liga {
+ignore sub bar bar' bar bar greater;
+ignore sub bar' bar bar greater greater;
+sub SPC SPC SPC greater' by bar_bar_bar_greater.liga;
+sub SPC SPC bar' greater by SPC;
+sub SPC bar' bar greater by SPC;
+sub bar' bar bar greater by SPC;
+} bar_bar_bar_greater.liga;
+
+# ||>
+lookup bar_bar_greater.liga {
+ignore sub bar bar' bar greater;
+ignore sub less bar' bar greater;
+ignore sub bar' bar greater greater;
+sub SPC SPC greater' by bar_bar_greater.liga;
+sub SPC bar' greater by SPC;
+sub bar' bar greater by SPC;
+} bar_bar_greater.liga;
+
+# |>
+lookup bar_greater.liga {
+ignore sub bar bar' greater;
+ignore sub bar' greater greater;
+sub SPC greater' by bar_greater.liga;
+sub bar' greater by SPC;
+} bar_greater.liga;
+
+#
+# |=
+lookup bar_equal.liga {
+ignore sub bar bar' equal;
+ignore sub bar' equal greater;
+ignore sub bar' equal equal;
+sub SPC equal' by bar_equal.liga;
+sub bar' equal by SPC;
+} bar_equal.liga;
+
+# |=
+lookup bar_bar_equal.liga {
+ignore sub bar bar bar' equal;
+ignore sub bar' equal greater;
+ignore sub bar' equal equal;
+sub SPC SPC equal' by bar_bar_equal.liga;
+sub SPC bar' equal by SPC;
+sub bar' bar equal by SPC;
+} bar_bar_equal.liga;
+
+# --
+lookup hyphen_hyphen.liga {
+ignore sub bracketleft hyphen' hyphen greater;
+ignore sub parenleft question less exclam hyphen' hyphen;
+ignore sub hyphen hyphen' hyphen;
+ignore sub less hyphen' hyphen;
+ignore sub hyphen' hyphen hyphen;
+sub SPC hyphen' by hyphen_hyphen.liga;
+sub hyphen' hyphen by SPC;
+} hyphen_hyphen.liga;
+
+# <--
+lookup less_hyphen_hyphen.liga {
+ignore sub less less' hyphen hyphen;
+ignore sub less' hyphen hyphen hyphen;
+sub SPC SPC hyphen' by less_hyphen_hyphen.liga;
+sub SPC hyphen' hyphen by SPC;
+sub less' hyphen hyphen by SPC;
+} less_hyphen_hyphen.liga;
+
+# ---
+lookup hyphen_hyphen_hyphen.liga {
+ignore sub bracketleft hyphen' hyphen hyphen greater;
+ignore sub hyphen hyphen' hyphen hyphen;
+ignore sub hyphen' hyphen hyphen hyphen;
+sub SPC SPC hyphen' by hyphen_hyphen_hyphen.liga;
+sub SPC hyphen' hyphen by SPC;
+sub hyphen' hyphen hyphen by SPC;
+} hyphen_hyphen_hyphen.liga;
+
+# ??
+lookup question_question.liga {
+ignore sub question question' question;
+ignore sub question' question question;
+sub SPC question' by question_question.liga;
+sub question' question by SPC;
+} question_question.liga;
+
+# ???
+lookup question_question_question.liga {
+ignore sub question question' question question;
+ignore sub question' question question question;
+sub SPC SPC question' by question_question_question.liga;
+sub SPC question' question by SPC;
+sub question' question question by SPC;
+} question_question_question.liga;
+
+
+# =/=
+lookup equal_slash_equal.liga {
+ignore sub equal equal' slash equal;
+ignore sub parenleft question equal' slash equal;
+ignore sub equal' slash equal equal;
+sub SPC SPC equal' by equal_slash_equal.liga;
+sub SPC slash' equal by SPC;
+sub equal' slash equal by SPC;
+} equal_slash_equal.liga;
+
+# <-<
+lookup less_hyphen_less.liga {
+ignore sub less less' hyphen less;
+ignore sub less' hyphen less less;
+sub SPC SPC less' by less_hyphen_less.liga;
+sub SPC hyphen' less by SPC;
+sub less' hyphen less by SPC;
+} less_hyphen_less.liga;
+
+# <=<
+lookup less_equal_less.liga {
+ignore sub less less' equal less;
+ignore sub parenleft question less' equal less;
+ignore sub less' equal less less;
+sub SPC SPC less' by less_equal_less.liga;
+sub SPC equal' less by SPC;
+sub less' equal less by SPC;
+} less_equal_less.liga;
+
+# <==>
+lookup less_equal_equal_greater.liga {
+ignore sub less less' equal equal greater;
+ignore sub parenleft question less' equal equal greater;
+ignore sub less' equal equal greater greater;
+sub SPC SPC greater' by less_equal_equal_greater.liga;
+sub SPC SPC equal' greater by SPC;
+sub SPC equal' equal greater by SPC;
+sub less' equal equal greater by SPC;
+} less_equal_equal_greater.liga;
+
+# ==>
+lookup equal_equal_greater.liga {
+ignore sub bracketleft equal' equal greater;
+ignore sub equal equal' equal greater;
+ignore sub parenleft question less equal' equal greater;
+ignore sub parenleft question equal' equal greater;
+ignore sub equal' equal greater greater;
+sub SPC SPC greater' by equal_equal_greater.liga;
+sub SPC equal' greater by SPC;
+sub equal' equal greater by SPC;
+} equal_equal_greater.liga;
+
+# =>>
+lookup equal_greater_greater.liga {
+ignore sub equal equal' greater greater;
+ignore sub parenleft question equal' greater greater;
+ignore sub equal' greater greater greater;
+sub SPC SPC greater' by equal_greater_greater.liga;
+sub SPC greater' greater by SPC;
+sub equal' greater greater by SPC;
+} equal_greater_greater.liga;
+
+# >=>
+lookup greater_equal_greater.liga {
+ignore sub greater greater' equal greater;
+ignore sub greater' equal greater greater;
+sub SPC SPC greater' by greater_equal_greater.liga;
+sub SPC equal' greater by SPC;
+sub greater' equal greater by SPC;
+} greater_equal_greater.liga;
+
+# >>=
+lookup greater_greater_equal.liga {
+ignore sub greater greater' greater equal;
+ignore sub greater' greater equal equal;
+sub SPC SPC equal' by greater_greater_equal.liga;
+sub SPC greater' equal by SPC;
+sub greater' greater equal by SPC;
+} greater_greater_equal.liga;
+
+# >>-
+lookup greater_greater_hyphen.liga {
+ignore sub greater greater' greater hyphen;
+ignore sub greater' greater hyphen hyphen;
+sub SPC SPC hyphen' by greater_greater_hyphen.liga;
+sub SPC greater' hyphen by SPC;
+sub greater' greater hyphen by SPC;
+} greater_greater_hyphen.liga;
+
+# >-
+lookup greater_hyphen.liga {
+ignore sub greater greater' hyphen;
+ignore sub greater' hyphen hyphen;
+ignore sub greater' hyphen greater;
+ignore sub greater' hyphen less;
+sub SPC hyphen' by greater_hyphen.liga;
+sub greater' hyphen by SPC;
+} greater_hyphen.liga;
+
+# >->
+lookup greater_hyphen_greater.liga {
+ignore sub greater greater' hyphen greater;
+ignore sub greater' hyphen greater greater;
+sub SPC SPC greater' by greater_hyphen_greater.liga;
+sub SPC hyphen' greater by SPC;
+sub greater' hyphen greater by SPC;
+} greater_hyphen_greater.liga;
+
+# <~
+lookup less_asciitilde.liga {
+ignore sub less less' asciitilde;
+ignore sub less' asciitilde asciitilde;
+ignore sub less' asciitilde greater;
+sub SPC asciitilde' by less_asciitilde.liga;
+sub less' asciitilde by SPC;
+} less_asciitilde.liga;
+
+# ~~
+lookup asciitilde_asciitilde.liga {
+ignore sub asciitilde asciitilde' asciitilde;
+ignore sub less asciitilde' asciitilde;
+ignore sub asciitilde' asciitilde asciitilde;
+ignore sub asciitilde' asciitilde greater;
+sub SPC asciitilde' by asciitilde_asciitilde.liga;
+sub asciitilde' asciitilde by SPC;
+} asciitilde_asciitilde.liga;
+
+# <~>
+lookup less_asciitilde_greater.liga {
+ignore sub less less' asciitilde greater;
+ignore sub less' asciitilde greater greater;
+sub SPC SPC greater' by less_asciitilde_greater.liga;
+sub SPC asciitilde' greater by SPC;
+sub less' asciitilde greater by SPC;
+} less_asciitilde_greater.liga;
+
+# -<
+lookup hyphen_less.liga {
+ignore sub hyphen hyphen' less;
+ignore sub less hyphen' less;
+ignore sub greater hyphen' less;
+ignore sub hyphen' less less;
+sub SPC less' by hyphen_less.liga;
+sub hyphen' less by SPC;
+} hyphen_less.liga;
+
+# -<<
+lookup hyphen_less_less.liga {
+ignore sub hyphen hyphen' less less;
+ignore sub hyphen' less less less;
+sub SPC SPC less' by hyphen_less_less.liga;
+sub SPC less' less by SPC;
+sub hyphen' less less by SPC;
+} hyphen_less_less.liga;
+
+# =<<
+lookup equal_less_less.liga {
+ignore sub equal equal' less less;
+ignore sub parenleft question equal' less less;
+ignore sub equal' less less less;
+sub SPC SPC less' by equal_less_less.liga;
+sub SPC less' less by SPC;
+sub equal' less less by SPC;
+} equal_less_less.liga;
+
+
+# |->
+lookup bar_hyphen_greater.liga {
+ignore sub bar bar' hyphen greater;
+ignore sub bar' hyphen greater greater;
+sub SPC SPC greater' by bar_hyphen_greater.liga;
+sub SPC hyphen' greater by SPC;
+sub bar' hyphen greater by SPC;
+} bar_hyphen_greater.liga;
+
+# <~~
+lookup less_asciitilde_asciitilde.liga {
+ignore sub less less' asciitilde asciitilde;
+ignore sub less' asciitilde asciitilde asciitilde;
+ignore sub less' asciitilde asciitilde greater;
+sub SPC SPC asciitilde' by less_asciitilde_asciitilde.liga;
+sub SPC asciitilde' asciitilde by SPC;
+sub less' asciitilde asciitilde by SPC;
+} less_asciitilde_asciitilde.liga;
+
+# -~
+lookup hyphen_asciitilde.liga {
+ignore sub hyphen hyphen' asciitilde;
+ignore sub hyphen' asciitilde asciitilde;
+ignore sub hyphen' asciitilde greater;
+sub SPC asciitilde' by hyphen_asciitilde.liga;
+sub hyphen' asciitilde by SPC;
+} hyphen_asciitilde.liga;
+
+# ~~>
+lookup asciitilde_asciitilde_greater.liga {
+ignore sub asciitilde asciitilde' asciitilde greater;
+ignore sub asciitilde' asciitilde greater greater;
+sub SPC SPC greater' by asciitilde_asciitilde_greater.liga;
+sub SPC asciitilde' greater by SPC;
+sub asciitilde' asciitilde greater by SPC;
+} asciitilde_asciitilde_greater.liga;
+
+# ~>
+lookup asciitilde_greater.liga {
+ignore sub asciitilde asciitilde' greater;
+ignore sub asciitilde' greater greater;
+sub SPC greater' by asciitilde_greater.liga;
+sub asciitilde' greater by SPC;
+} asciitilde_greater.liga;
+
+# ~-
+lookup asciitilde_hyphen.liga {
+ignore sub asciitilde asciitilde' hyphen;
+ignore sub asciitilde' hyphen hyphen;
+sub SPC hyphen' by asciitilde_hyphen.liga;
+sub asciitilde' hyphen by SPC;
+} asciitilde_hyphen.liga;
+
+
+# :=
+lookup colon_equal.liga {
+sub SPC equal' by colon_equal.liga;
+sub colon' equal by SPC;
+} colon_equal.liga;
+
+
+# .=
+lookup period_equal.liga {
+sub SPC equal' by period_equal.liga;
+sub period' equal by SPC;
+} period_equal.liga;
+";
+notes = "lookup intial_run {
+sub @Default' @Default by @Initial;
+} intial_run;
+
+lookup medial_run {
+sub @Medial @Initial' by @Medial;
+sub @Initial @Initial' by @Medial;
+} medial_run;
+
+lookup final_run {
+sub @Initial @Default' by @Final;
+sub @Medial @Default' by @Final;
+} final_run;
+
+# [|
+lookup bracketleft_bar.liga {
+ignore sub bracketleft bracketleft' bar;
+sub SPC bar' by bracketleft_bar.liga;
+sub bracketleft' bar by SPC;
+} bracketleft_bar.liga;
+
+# |]
+lookup bar_bracketright.liga {
+ignore sub bar' bracketright bracketright;
+sub SPC bracketright' by bar_bracketright.liga;
+sub bar' bracketright by SPC;
+} bar_bracketright.liga;
+
+# ***
+lookup asterisk_asterisk_asterisk.liga {
+ignore sub asterisk asterisk' asterisk asterisk;
+ignore sub asterisk' asterisk asterisk asterisk;
+sub SPC SPC asterisk' by asterisk_asterisk_asterisk.liga;
+sub SPC asterisk' asterisk by SPC;
+sub asterisk' asterisk asterisk by SPC;
+} asterisk_asterisk_asterisk.liga;
+
+# .?
+lookup period_question.liga {
+ignore sub period period' question;
+ignore sub period' question question;
+sub SPC question' by period_question.liga;
+sub period' question by SPC;
+} period_question.liga;
+
+# ..
+lookup period_period.liga {
+ignore sub period period' period;
+ignore sub period' period period;
+ignore sub period' period less;
+sub SPC period' by period_period.liga;
+sub period' period by SPC;
+} period_period.liga;
+
+# ..<
+lookup period_period_less.liga {
+ignore sub period period' period less;
+ignore sub period' period less less;
+sub SPC SPC less' by period_period_less.liga;
+sub SPC period' less by SPC;
+sub period' period less by SPC;
+} period_period_less.liga;
+
+# <#--
+lookup less_numbersign_hyphen_hyphen.liga {
+ignore sub less less' numbersign hyphen hyphen;
+ignore sub less' numbersign hyphen hyphen hyphen;
+sub SPC SPC SPC hyphen' by less_numbersign_hyphen_hyphen.liga;
+sub SPC SPC hyphen' hyphen by SPC;
+sub SPC numbersign' hyphen hyphen by SPC;
+sub less' numbersign hyphen hyphen by SPC;
+} less_numbersign_hyphen_hyphen.liga;
+
+# <<~
+lookup less_less_asciitilde.liga {
+ignore sub less less' less asciitilde;
+ignore sub less' less asciitilde asciitilde;
+sub SPC SPC asciitilde' by less_less_asciitilde.liga;
+sub SPC less' asciitilde by SPC;
+sub less' less asciitilde by SPC;
+} less_less_asciitilde.liga;
+
+# -|
+lookup hyphen_bar.liga {
+ignore sub hyphen hyphen' bar;
+ignore sub less hyphen' bar;
+ignore sub hyphen' bar bar;
+sub SPC bar' by hyphen_bar.liga;
+sub hyphen' bar by SPC;
+} hyphen_bar.liga;
+
+# _|_
+lookup underscore_bar_underscore.liga {
+ignore sub underscore underscore' bar underscore;
+ignore sub underscore' bar underscore underscore;
+sub SPC SPC underscore' by underscore_bar_underscore.liga;
+sub SPC bar' underscore by SPC;
+sub underscore' bar underscore by SPC;
+} underscore_bar_underscore.liga;
+
+# !!
+lookup exclam_exclam.liga {
+ignore sub exclam exclam' exclam;
+ignore sub parenleft question exclam' exclam;
+ignore sub parenleft question less exclam' exclam;
+ignore sub exclam' exclam exclam;
+sub SPC exclam' by exclam_exclam.liga;
+sub exclam' exclam by SPC;
+} exclam_exclam.liga;
+
+# =!=
+lookup equal_exclam_equal.liga{
+ignore sub equal equal' exclam equal;
+ignore sub parenleft question equal' exclam equal;
+ignore sub equal' exclam equal equal;
+sub SPC SPC equal' by equal_exclam_equal.liga;
+sub SPC exclam' equal by SPC;
+sub equal' exclam equal by SPC;
+} equal_exclam_equal.liga;
+
+# ::
+lookup colon_colon.liga {
+ignore sub colon colon' colon;
+ignore sub colon' colon colon;
+ignore sub colon' colon equal;
+sub SPC colon' by colon_colon.liga;
+sub colon' colon by SPC;
+} colon_colon.liga;
+
+# ;;
+lookup semicolon_semicolon.liga {
+ignore sub semicolon semicolon' semicolon;
+ignore sub semicolon' semicolon semicolon;
+sub SPC semicolon' by semicolon_semicolon.liga;
+sub semicolon' semicolon by SPC;
+} semicolon_semicolon.liga;
+
+# ;;;
+lookup semicolon_semicolon_semicolon.liga {
+ignore sub semicolon semicolon' semicolon semicolon;
+ignore sub semicolon' semicolon semicolon semicolon;
+sub SPC SPC semicolon' by semicolon_semicolon_semicolon.liga;
+sub SPC semicolon' semicolon by SPC;
+sub semicolon' semicolon semicolon by SPC;
+} semicolon_semicolon_semicolon.liga;
+
+# :::
+lookup colon_colon_colon.liga {
+ignore sub colon colon' colon colon;
+ignore sub colon' colon colon colon;
+sub SPC SPC colon' by colon_colon_colon.liga;
+sub SPC colon' colon by SPC;
+sub colon' colon colon by SPC;
+} colon_colon_colon.liga;
+
+ ||-
+lookup bar_bar_hyphen.liga {
+ignore sub bar bar' bar hyphen hyphen;
+ignore sub bar' bar bar hyphen;
+sub SPC SPC hyphen' by bar_bar_hyphen.liga;
+sub SPC bar' hyphen by SPC;
+sub bar' bar hyphen by SPC;
+} bar_bar_hyphen.liga;
+
+# ||
+lookup bar_bar.liga {
+ignore sub bar bar' bar;
+ignore sub bar' bar bar;
+ignore sub bracketleft bar' bar;
+ignore sub bar' bar bracketright;
+sub SPC bar' by bar_bar.liga;
+sub bar' bar by SPC;
+} bar_bar.liga;
+
+# |-
+lookup bar_hyphen.liga {
+ignore sub bar bar' hyphen;
+ignore sub bar' hyphen hyphen;
+ignore sub bar' hyphen greater;
+sub SPC hyphen' by bar_hyphen.liga;
+sub bar' hyphen by SPC;
+} bar_hyphen.liga;
+
+# ?.
+lookup question_period.liga {
+ignore sub question question' period;
+ignore sub question' period period;
+sub SPC period' by question_period.liga;
+sub question' period by SPC;
+} question_period.liga;
+
+# <-|
+lookup less_hyphen_bar.liga {
+ignore sub less less' hyphen bar;
+ignore sub less' hyphen bar bar;
+sub SPC SPC bar' by less_hyphen_bar.liga;
+sub SPC hyphen' bar by SPC;
+sub less' hyphen bar by SPC;
+} less_hyphen_bar.liga;
+
+# <=|
+lookup less_equal_bar.liga {
+ignore sub less less' equal bar;
+ignore sub parenleft question less' equal bar;
+ignore sub less' equal bar bar;
+sub SPC SPC bar' by less_equal_bar.liga;
+sub SPC equal' bar by SPC;
+sub less' equal bar by SPC;
+} less_equal_bar.liga;
+
+# |=>
+lookup bar_equal_greater.liga {
+ignore sub bar bar' equal greater;
+ignore sub bar' equal greater greater;
+sub SPC SPC greater' by bar_equal_greater.liga;
+sub SPC equal' greater by SPC;
+sub bar' equal greater by SPC;
+} bar_equal_greater.liga;
+
+# : @UppercaseRelated : 
+lookup colon_UppercaseRelated_colon {
+ignore sub @UppercaseRelated colon' @NotUppercaseRelated;
+ignore sub @NotUppercaseRelated colon' @UppercaseRelated;
+sub @UppercaseRelated colon' by colon.case;
+sub colon' @UppercaseRelated by colon.case;
+} colon_UppercaseRelated_colon;
 
 
 ";
@@ -570,11 +1404,11 @@ axesValues = (
 customParameters = (
 {
 name = hheaAscender;
-value = 955;
+value = 1005;
 },
 {
 name = hheaDescender;
-value = -245;
+value = -295;
 },
 {
 name = hheaLineGap;
@@ -582,11 +1416,11 @@ value = 0;
 },
 {
 name = typoAscender;
-value = 955;
+value = 1005;
 },
 {
 name = typoDescender;
-value = -245;
+value = -295;
 },
 {
 name = typoLineGap;
@@ -645,11 +1479,11 @@ axesValues = (
 customParameters = (
 {
 name = hheaAscender;
-value = 955;
+value = 1005;
 },
 {
 name = hheaDescender;
-value = -245;
+value = -295;
 },
 {
 name = hheaLineGap;
@@ -657,11 +1491,11 @@ value = 0;
 },
 {
 name = typoAscender;
-value = 955;
+value = 1005;
 },
 {
 name = typoDescender;
-value = -245;
+value = -295;
 },
 {
 name = typoLineGap;
@@ -711,11 +1545,11 @@ axesValues = (
 customParameters = (
 {
 name = hheaAscender;
-value = 955;
+value = 1005;
 },
 {
 name = hheaDescender;
-value = -245;
+value = -295;
 },
 {
 name = hheaLineGap;
@@ -723,11 +1557,11 @@ value = 0;
 },
 {
 name = typoAscender;
-value = 955;
+value = 1005;
 },
 {
 name = typoDescender;
-value = -245;
+value = -295;
 },
 {
 name = typoLineGap;

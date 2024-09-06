@@ -80,60 +80,6 @@ nodes = (
 width = 600;
 },
 {
-associatedMasterId = "EE2FFE84-06F1-4AFB-BBEC-60D09A436D14";
-guides = (
-{
-pos = (228,706);
-},
-{
-pos = (215,378);
-},
-{
-angle = 270;
-pos = (372,608);
-},
-{
-angle = 270;
-pos = (51,598);
-},
-{
-pos = (154,706);
-}
-);
-layerId = "5C64FE3B-FF75-41D6-99E9-254AEB2DE07B";
-name = "24 de feb. de 23 13:25";
-shapes = (
-{
-closed = 1;
-nodes = (
-(40,562,l),
-(40,532,l),
-(382,532,l),
-(382,562,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(138,703,l),
-(113,688,l),
-(284,391,l),
-(309,406,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(138,391,l),
-(309,688,l),
-(284,703,l),
-(113,406,l)
-);
-}
-);
-width = 422;
-},
-{
 background = {
 shapes = (
 {

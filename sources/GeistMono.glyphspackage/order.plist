@@ -863,6 +863,7 @@ dotaccent.ss08,
 apostrophemod,
 primemod,
 verticallinemod,
+SPC,
 blackCircled,
 blackCircledStroke
 )

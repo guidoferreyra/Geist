@@ -50,56 +50,6 @@ nodes = (
 width = 600;
 },
 {
-associatedMasterId = "EE2FFE84-06F1-4AFB-BBEC-60D09A436D14";
-background = {
-shapes = (
-{
-closed = 1;
-nodes = (
-(295,18,l),
-(375,18,l),
-(375,623,l),
-(295,623,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(88,398,l),
-(25,500,l),
-(645,499,l),
-(582,397,l),
-(335,694,l)
-);
-}
-);
-};
-layerId = "E8295BEC-29C5-47AD-AFAD-EDFD642D482F";
-name = "3 de abr. de 23 12:07";
-shapes = (
-{
-closed = 1;
-nodes = (
-(319,18,l),
-(351,18,l),
-(351,658,l),
-(319,658,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(98,398,l),
-(25,540,l),
-(645,539,l),
-(572,397,l),
-(335,694,l)
-);
-}
-);
-width = 670;
-},
-{
 layerId = "574EE4B9-5C1A-4E7E-9985-C08FACB65BD8";
 shapes = (
 {

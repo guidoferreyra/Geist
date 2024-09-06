@@ -11,7 +11,7 @@ shapes = (
 ref = L;
 },
 {
-pos = (-3,-6);
+pos = (-150,-6);
 ref = slashshortcomb.case;
 }
 );
@@ -24,7 +24,7 @@ shapes = (
 ref = L;
 },
 {
-pos = (-10,-17);
+pos = (-116,-17);
 ref = slashshortcomb.case;
 }
 );
@@ -37,7 +37,7 @@ shapes = (
 ref = L;
 },
 {
-pos = (-30,-8);
+pos = (-95,-8);
 ref = slashshortcomb.case;
 }
 );
