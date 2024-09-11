@@ -10,7 +10,7 @@ fontbakery version: 0.12.10
 
 
 
-<details><summary>[11] Geist[wght].ttf</summary>
+<details><summary>[10] Geist[wght].ttf</summary>
 <div>
 <details>
     <summary>⚠️ <b>WARN</b> Check math signs have the same width. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#"></a></summary>
@@ -27,7 +27,7 @@ The following math glyphs have a different width, though:</p>
 <p>Width = 558:
 plus</p>
 <p>Width = 540:
-divide, equal, notequal</p>
+notequal, divide, equal</p>
 <p>Width = 500:
 logicalnot</p>
 <p>Width = 538:
@@ -56,7 +56,9 @@ approxequal</p>
 
 
 * ⚠️ **WARN** <p>The following glyphs could not be reached by codepoint or substitution rules:</p>
-<pre><code>- uni0306.cy
+<pre><code>- blackCircled
+
+- uni0306.cy
 </code></pre>
  [code: unreachable-glyphs]
 
@@ -119,15 +121,15 @@ subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
 <li>U+02B9 MODIFIER LETTER PRIME: not included in any glyphset definition</li>
-<li>U+02C7 CARON: try adding one of: tifinagh, yi, canadian-aboriginal</li>
+<li>U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi</li>
 <li>U+02C8 MODIFIER LETTER VERTICAL LINE: not included in any glyphset definition</li>
-<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
 <li>U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, tifinagh, cherokee, math</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, math, coptic</li>
 <li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: syriac, coptic, tifinagh, math, tai-le, old-permic, malayalam, canadian-aboriginal</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, coptic, old-permic, math, syriac, tifinagh, tai-le, malayalam</li>
 <li>U+030A COMBINING RING ABOVE: try adding syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
@@ -139,8 +141,8 @@ definitions.</p>
 <li>U+0336 COMBINING LONG STROKE OVERLAY: not included in any glyphset definition</li>
 <li>U+0337 COMBINING SHORT SOLIDUS OVERLAY: not included in any glyphset definition</li>
 <li>U+0338 COMBINING LONG SOLIDUS OVERLAY: not included in any glyphset definition</li>
-<li>U+039B GREEK CAPITAL LETTER LAMDA: try adding one of: math, elbasan, greek</li>
-<li>U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: math, elbasan, greek</li>
+<li>U+039B GREEK CAPITAL LETTER LAMDA: try adding one of: elbasan, math, greek</li>
+<li>U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: elbasan, math, greek</li>
 <li>U+03BB GREEK SMALL LETTER LAMDA: try adding one of: math, greek</li>
 <li>U+03C0 GREEK SMALL LETTER PI: try adding one of: yi, math, greek</li>
 <li>U+0E3F THAI CURRENCY SYMBOL BAHT: try adding thai</li>
@@ -173,14 +175,14 @@ definitions.</p>
 <li>U+215C VULGAR FRACTION THREE EIGHTHS: not included in any glyphset definition</li>
 <li>U+215D VULGAR FRACTION FIVE EIGHTHS: not included in any glyphset definition</li>
 <li>U+215E VULGAR FRACTION SEVEN EIGHTHS: not included in any glyphset definition</li>
-<li>U+2190 LEFTWARDS ARROW: try adding one of: symbols, math</li>
-<li>U+2192 RIGHTWARDS ARROW: try adding one of: symbols, math</li>
-<li>U+2194 LEFT RIGHT ARROW: try adding one of: symbols, math</li>
-<li>U+2195 UP DOWN ARROW: try adding one of: symbols, math</li>
-<li>U+2196 NORTH WEST ARROW: try adding one of: symbols, math</li>
-<li>U+2197 NORTH EAST ARROW: try adding one of: symbols, math</li>
-<li>U+2198 SOUTH EAST ARROW: try adding one of: symbols, math</li>
-<li>U+2199 SOUTH WEST ARROW: try adding one of: symbols, math</li>
+<li>U+2190 LEFTWARDS ARROW: try adding one of: math, symbols</li>
+<li>U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols</li>
+<li>U+2194 LEFT RIGHT ARROW: try adding one of: math, symbols</li>
+<li>U+2195 UP DOWN ARROW: try adding one of: math, symbols</li>
+<li>U+2196 NORTH WEST ARROW: try adding one of: math, symbols</li>
+<li>U+2197 NORTH EAST ARROW: try adding one of: math, symbols</li>
+<li>U+2198 SOUTH EAST ARROW: try adding one of: math, symbols</li>
+<li>U+2199 SOUTH WEST ARROW: try adding one of: math, symbols</li>
 <li>U+219D RIGHTWARDS WAVE ARROW: try adding math</li>
 <li>U+21A9 LEFTWARDS ARROW WITH HOOK: try adding math</li>
 <li>U+21AA RIGHTWARDS ARROW WITH HOOK: try adding math</li>
@@ -218,16 +220,16 @@ definitions.</p>
 <li>U+24EA CIRCLED DIGIT ZERO: try adding symbols</li>
 <li>U+24FF NEGATIVE CIRCLED DIGIT ZERO: try adding symbols</li>
 <li>U+25B2 BLACK UP-POINTING TRIANGLE: try adding symbols</li>
-<li>U+25B3 WHITE UP-POINTING TRIANGLE: try adding one of: symbols, math</li>
+<li>U+25B3 WHITE UP-POINTING TRIANGLE: try adding one of: math, symbols</li>
 <li>U+25B6 BLACK RIGHT-POINTING TRIANGLE: try adding symbols</li>
-<li>U+25B7 WHITE RIGHT-POINTING TRIANGLE: try adding one of: symbols, math</li>
+<li>U+25B7 WHITE RIGHT-POINTING TRIANGLE: try adding one of: math, symbols</li>
 <li>U+25BC BLACK DOWN-POINTING TRIANGLE: try adding symbols</li>
-<li>U+25BD WHITE DOWN-POINTING TRIANGLE: try adding one of: symbols, math</li>
+<li>U+25BD WHITE DOWN-POINTING TRIANGLE: try adding one of: math, symbols</li>
 <li>U+25C0 BLACK LEFT-POINTING TRIANGLE: try adding symbols</li>
-<li>U+25C1 WHITE LEFT-POINTING TRIANGLE: try adding one of: symbols, math</li>
-<li>U+25CA LOZENGE: try adding one of: symbols, math</li>
+<li>U+25C1 WHITE LEFT-POINTING TRIANGLE: try adding one of: math, symbols</li>
+<li>U+25CA LOZENGE: try adding one of: math, symbols</li>
 <li>U+25CB WHITE CIRCLE: try adding symbols</li>
-<li>U+25CC DOTTED CIRCLE: try adding one of: tai-viet, mahajani, khojki, lepcha, sharada, cham, new-tai-lue, marchen, bengali, bhaiksuki, zanabazar-square, bassa-vah, thaana, old-permic, psalter-pahlavi, tai-tham, manichaean, saurashtra, buhid, batak, gujarati, elbasan, newa, soyombo, dogra, tagbanwa, tibetan, oriya, mende-kikakui, devanagari, syloti-nagri, ahom, lao, gurmukhi, rejang, hanunoo, chakma, kayah-li, caucasian-albanian, kaithi, sogdian, music, thai, grantha, modi, hebrew, nko, malayalam, tagalog, tirhuta, armenian, buginese, gunjala-gondi, sundanese, tifinagh, wancho, duployan, syriac, osage, brahmi, coptic, takri, balinese, adlam, sinhala, canadian-aboriginal, mandaic, warang-citi, kannada, khudawadi, miao, khmer, siddham, masaram-gondi, myanmar, meetei-mayek, pahawh-hmong, limbu, phags-pa, mongolian, hanifi-rohingya, symbols, telugu, yi, kharoshthi, math, javanese, tamil, tai-le</li>
+<li>U+25CC DOTTED CIRCLE: try adding one of: balinese, hanunoo, sundanese, phags-pa, rejang, music, ahom, bengali, cham, meetei-mayek, yi, brahmi, nko, limbu, tai-le, syloti-nagri, bhaiksuki, mende-kikakui, saurashtra, syriac, chakma, gunjala-gondi, new-tai-lue, mandaic, osage, lepcha, kharoshthi, miao, soyombo, siddham, sinhala, canadian-aboriginal, psalter-pahlavi, grantha, batak, pahawh-hmong, takri, lao, tai-tham, buhid, buginese, marchen, sharada, symbols, warang-citi, bassa-vah, oriya, gurmukhi, tagalog, kayah-li, math, armenian, gujarati, thai, masaram-gondi, tai-viet, malayalam, coptic, tamil, sogdian, hebrew, zanabazar-square, elbasan, myanmar, devanagari, tibetan, wancho, javanese, thaana, dogra, kannada, newa, tagbanwa, old-permic, manichaean, hanifi-rohingya, modi, telugu, mahajani, khmer, adlam, khojki, tifinagh, mongolian, khudawadi, duployan, caucasian-albanian, tirhuta, kaithi</li>
 <li>U+25CF BLACK CIRCLE: try adding symbols</li>
 <li>U+2639 WHITE FROWNING FACE: try adding symbols</li>
 <li>U+263A WHITE SMILING FACE: try adding symbols</li>
@@ -240,21 +242,21 @@ definitions.</p>
 <li>U+277C DINGBAT NEGATIVE CIRCLED DIGIT SEVEN: try adding symbols</li>
 <li>U+277D DINGBAT NEGATIVE CIRCLED DIGIT EIGHT: try adding symbols</li>
 <li>U+277E DINGBAT NEGATIVE CIRCLED DIGIT NINE: try adding symbols</li>
-<li>U+3003 DITTO MARK: try adding one of: phags-pa, chinese-simplified, chinese-hongkong, japanese, yi, chinese-traditional</li>
-<li>U+3008 LEFT ANGLE BRACKET: try adding one of: phags-pa, chinese-simplified, chinese-hongkong, japanese, yi, chinese-traditional, tai-le</li>
-<li>U+3009 RIGHT ANGLE BRACKET: try adding one of: phags-pa, chinese-simplified, chinese-hongkong, japanese, yi, chinese-traditional, tai-le</li>
-<li>U+300A LEFT DOUBLE ANGLE BRACKET: try adding one of: phags-pa, chinese-simplified, mongolian, chinese-hongkong, lisu, japanese, yi, chinese-traditional, tai-le</li>
-<li>U+300B RIGHT DOUBLE ANGLE BRACKET: try adding one of: phags-pa, chinese-simplified, mongolian, chinese-hongkong, lisu, japanese, yi, chinese-traditional, tai-le</li>
-<li>U+300C LEFT CORNER BRACKET: try adding one of: phags-pa, chinese-simplified, mongolian, chinese-hongkong, japanese, yi, chinese-traditional</li>
-<li>U+300D RIGHT CORNER BRACKET: try adding one of: phags-pa, chinese-simplified, mongolian, chinese-hongkong, japanese, yi, chinese-traditional</li>
-<li>U+300E LEFT WHITE CORNER BRACKET: try adding one of: phags-pa, chinese-simplified, mongolian, chinese-hongkong, japanese, yi, chinese-traditional</li>
-<li>U+300F RIGHT WHITE CORNER BRACKET: try adding one of: phags-pa, chinese-simplified, mongolian, chinese-hongkong, japanese, yi, chinese-traditional</li>
-<li>U+3010 LEFT BLACK LENTICULAR BRACKET: try adding one of: phags-pa, chinese-simplified, chinese-hongkong, japanese, yi, chinese-traditional</li>
-<li>U+3011 RIGHT BLACK LENTICULAR BRACKET: try adding one of: phags-pa, chinese-simplified, chinese-hongkong, japanese, yi, chinese-traditional</li>
-<li>U+3014 LEFT TORTOISE SHELL BRACKET: try adding one of: phags-pa, chinese-simplified, chinese-hongkong, japanese, yi, chinese-traditional</li>
-<li>U+3015 RIGHT TORTOISE SHELL BRACKET: try adding one of: phags-pa, chinese-simplified, chinese-hongkong, japanese, yi, chinese-traditional</li>
-<li>U+3016 LEFT WHITE LENTICULAR BRACKET: try adding one of: phags-pa, chinese-simplified, chinese-hongkong, japanese, yi, chinese-traditional</li>
-<li>U+3017 RIGHT WHITE LENTICULAR BRACKET: try adding one of: phags-pa, chinese-simplified, chinese-hongkong, japanese, yi, chinese-traditional</li>
+<li>U+3003 DITTO MARK: try adding one of: phags-pa, japanese, chinese-simplified, yi, chinese-hongkong, chinese-traditional</li>
+<li>U+3008 LEFT ANGLE BRACKET: try adding one of: phags-pa, japanese, chinese-simplified, yi, chinese-hongkong, tai-le, chinese-traditional</li>
+<li>U+3009 RIGHT ANGLE BRACKET: try adding one of: phags-pa, japanese, chinese-simplified, yi, chinese-hongkong, tai-le, chinese-traditional</li>
+<li>U+300A LEFT DOUBLE ANGLE BRACKET: try adding one of: lisu, phags-pa, japanese, chinese-simplified, yi, mongolian, chinese-hongkong, tai-le, chinese-traditional</li>
+<li>U+300B RIGHT DOUBLE ANGLE BRACKET: try adding one of: lisu, phags-pa, japanese, chinese-simplified, yi, mongolian, chinese-hongkong, tai-le, chinese-traditional</li>
+<li>U+300C LEFT CORNER BRACKET: try adding one of: phags-pa, japanese, chinese-simplified, yi, mongolian, chinese-hongkong, chinese-traditional</li>
+<li>U+300D RIGHT CORNER BRACKET: try adding one of: phags-pa, japanese, chinese-simplified, yi, mongolian, chinese-hongkong, chinese-traditional</li>
+<li>U+300E LEFT WHITE CORNER BRACKET: try adding one of: phags-pa, japanese, chinese-simplified, yi, mongolian, chinese-hongkong, chinese-traditional</li>
+<li>U+300F RIGHT WHITE CORNER BRACKET: try adding one of: phags-pa, japanese, chinese-simplified, yi, mongolian, chinese-hongkong, chinese-traditional</li>
+<li>U+3010 LEFT BLACK LENTICULAR BRACKET: try adding one of: phags-pa, japanese, chinese-simplified, yi, chinese-hongkong, chinese-traditional</li>
+<li>U+3011 RIGHT BLACK LENTICULAR BRACKET: try adding one of: phags-pa, japanese, chinese-simplified, yi, chinese-hongkong, chinese-traditional</li>
+<li>U+3014 LEFT TORTOISE SHELL BRACKET: try adding one of: phags-pa, japanese, chinese-simplified, yi, chinese-hongkong, chinese-traditional</li>
+<li>U+3015 RIGHT TORTOISE SHELL BRACKET: try adding one of: phags-pa, japanese, chinese-simplified, yi, chinese-hongkong, chinese-traditional</li>
+<li>U+3016 LEFT WHITE LENTICULAR BRACKET: try adding one of: phags-pa, japanese, chinese-simplified, yi, chinese-hongkong, chinese-traditional</li>
+<li>U+3017 RIGHT WHITE LENTICULAR BRACKET: try adding one of: phags-pa, japanese, chinese-simplified, yi, chinese-hongkong, chinese-traditional</li>
 <li>U+301C WAVE DASH: try adding japanese</li>
 <li>U+F8FF : not included in any glyphset definition</li>
 <li>U+FB01 LATIN SMALL LIGATURE FI: not included in any glyphset definition</li>
@@ -280,8 +282,8 @@ definitions.</p>
 
 * ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ і́</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Belarusian (Cyrl, 10,064,517 speakers), Lithuanian (Latn, 2,357,094 speakers), Navajo (Latn, 166,319 speakers), Dutch (Latn, 31,709,104 speakers), Ukrainian (Cyrl, 29,273,587 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Southern Kisi (Latn, 360,000 speakers), Aghem (Latn, 38,843 speakers), Yala (Latn, 200,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Nzakara (Latn, 50,000 speakers), Lugbara (Latn, 2,200,000 speakers), Basaa (Latn, 332,940 speakers), Gulay (Latn, 250,478 speakers), Makaa (Latn, 221,000 speakers), Dii (Latn, 71,000 speakers), Mfumte (Latn, 79,000 speakers), Mundani (Latn, 34,000 speakers), South Central Banda (Latn, 244,000 speakers), Dan (Latn, 1,099,244 speakers), Mango (Latn, 77,000 speakers), Bafut (Latn, 158,146 speakers), Vute (Latn, 21,000 speakers), Kom (Latn, 360,685 speakers), Ma’di (Latn, 584,000 speakers), Ebira (Latn, 2,200,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Igbo (Latn, 27,823,640 speakers), Ngbaka (Latn, 1,020,000 speakers), Ekpeye (Latn, 226,000 speakers), Cicipu (Latn, 44,000 speakers), Ejagham (Latn, 120,000 speakers), Zapotec (Latn, 490,000 speakers), Avokaya (Latn, 100,000 speakers), Sar (Latn, 500,000 speakers), Nateni (Latn, 100,000 speakers), Koonzime (Latn, 40,000 speakers), Fur (Latn, 1,230,163 speakers).</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Ukrainian (Cyrl, 29,273,587 speakers), Navajo (Latn, 166,319 speakers), Belarusian (Cyrl, 10,064,517 speakers), Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Mango (Latn, 77,000 speakers), Yala (Latn, 200,000 speakers), Lugbara (Latn, 2,200,000 speakers), Kom (Latn, 360,685 speakers), Avokaya (Latn, 100,000 speakers), Gulay (Latn, 250,478 speakers), Fur (Latn, 1,230,163 speakers), Dii (Latn, 71,000 speakers), Basaa (Latn, 332,940 speakers), Cicipu (Latn, 44,000 speakers), Aghem (Latn, 38,843 speakers), Dan (Latn, 1,099,244 speakers), Ngbaka (Latn, 1,020,000 speakers), Sar (Latn, 500,000 speakers), Mfumte (Latn, 79,000 speakers), Ekpeye (Latn, 226,000 speakers), Ma’di (Latn, 584,000 speakers), Zapotec (Latn, 490,000 speakers), Koonzime (Latn, 40,000 speakers), Ejagham (Latn, 120,000 speakers), Makaa (Latn, 221,000 speakers), Southern Kisi (Latn, 360,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Nzakara (Latn, 50,000 speakers), Vute (Latn, 21,000 speakers), Mundani (Latn, 34,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Nateni (Latn, 100,000 speakers), Bafut (Latn, 158,146 speakers), South Central Banda (Latn, 244,000 speakers), Ebira (Latn, 2,200,000 speakers), Igbo (Latn, 27,823,640 speakers).</p>
  [code: soft-dotted]
 
 
@@ -365,24 +367,6 @@ definitions.</p>
 </details>
 
 <details>
-    <summary>⚠️ <b>WARN</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.meta.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>This font file does not have a 'meta' table.</p>
- [code: lacks-meta-table]
-
-
-
-</div>
-</details>
-
-<details>
     <summary>⚠️ <b>WARN</b> Checking OS/2 achVendID. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.os2.html#"></a></summary>
     <div>
 
@@ -409,7 +393,7 @@ definitions.</p>
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 0 | 11 | 93 | 9 | 138 | 0 | 
+| 0 | 0 | 0 | 10 | 93 | 10 | 138 | 0 | 
 | 0% | 0% | 0% | 4% | 37% | 4% | 55% | 0% | 
 
 
